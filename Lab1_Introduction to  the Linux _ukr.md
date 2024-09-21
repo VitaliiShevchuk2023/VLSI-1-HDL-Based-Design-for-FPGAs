@@ -7,6 +7,10 @@
   ```
   **Результат:** Вивід: `I can make my computer talk.`
 
+   ![Опис зображення](Images/Lab1/task1.png)
+
+  
+
 - **Команда з перенесенням рядка:**
   ```bash
   echo 'I can make my computer \
