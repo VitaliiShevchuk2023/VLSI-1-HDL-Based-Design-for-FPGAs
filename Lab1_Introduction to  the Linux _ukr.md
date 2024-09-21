@@ -29,6 +29,7 @@
   /home/vlsi1/ex0/install.sh
   ```
   **Результат:** Скрипт виконано.
+  
   ![Опис зображення](Images/Lab1/task2.png)
 
   
