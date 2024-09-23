@@ -427,6 +427,8 @@ diff examples/diff/prepare_chip.pl examples/diff/prepare_chip_v2.pl
 **Результат:**  
 [Опишіть зміни, які були виявлені за допомогою diff]
 
+![Опис зображення](Images/Lab1/task27.png)
+
 ---
 
 ### Завдання  28
