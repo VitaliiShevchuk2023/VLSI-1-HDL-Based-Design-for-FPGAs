@@ -35,7 +35,7 @@ Xilinx Zynq-7020 System-on-Chip (SoC), з яким ви працюєте, має
 
 
 
-   ![Опис зображення](Images/Lab2/Lab2_image1.png)
+   ![Опис зображення](Images/Lab2/Lab2_Image1.png)
 
 (a) Організація FPGA серії Xilinx 7.
 
@@ -45,18 +45,18 @@ LUT
 LUT  
 LUT  
 
-![Опис зображення](Images/Lab2/Lab2_image2.png)
+![Опис зображення](Images/Lab2/Lab2_Image2.png)
 
 (b) Спрощена блок-схема  
 слайсу CLB.
 
-![Опис зображення](Images/Lab2/Lab2_image3.png)
+![Опис зображення](Images/Lab2/Lab2_Image3.png)
 
 (c) Інтерфейс BRAM,  
 налаштованого в режимі двох портів.
 
 
-![Опис зображення](Images/Lab2/Lab2_image4.png)
+![Опис зображення](Images/Lab2/Lab2_Image4.png)
 
 (d) Основна функціональність  
 DSP-слайсу.
