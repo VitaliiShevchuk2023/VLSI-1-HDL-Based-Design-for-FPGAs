@@ -132,7 +132,7 @@ FPGA тепер готова до програмування. Ми будемо 
 vivado-2017.2 vivado
 ```
 
-![Опис зображення](Images/Lab2/Lab2_Image9.jpg)
+![Опис зображення](Images/Lab2/Lab2_Image9.png)
 
 
 
