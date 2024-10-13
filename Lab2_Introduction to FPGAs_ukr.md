@@ -353,3 +353,96 @@ add_files [glob ../sourcecode/*]
 ---
 
 
+
+
+
+### Пояснення файлу обмежень для плати Zybo-Z7
+
+Цей файл `.xdc` задає обмеження для плати Zybo-Z7 (сумісний з Z7-20 та Z7-10) і визначає відповідність фізичних контактів плати (пінів) логічним сигналам дизайну на FPGA. Ось пояснення основних розділів:
+
+---
+
+### 1. **Джерело тактового сигналу (Clock Source)**
+
+```tcl
+set_property -dict { PACKAGE_PIN K17  IOSTANDARD LVCMOS33 } [get_ports { clk_i }];
+create_clock -add -name sys_clk -period 8.00 -waveform {0 4} [get_ports { clk_i }];
+```
+- **PACKAGE_PIN K17**: Це означає, що вхідний тактовий сигнал (clk_i) підключений до піна K17 на платі Zybo-Z7.
+- **IOSTANDARD LVCMOS33**: Визначає стандарт логіки для цього піна як LVCMOS33, тобто логіка з напругою 3.3 В.
+- **create_clock**: Створюється тактовий сигнал з ім'ям `sys_clk` з періодом 8 нс (125 МГц) і чергуванням 50% (4 нс "high" та 4 нс "low").
+
+---
+
+### 2. **Перемикачі (Switches)**
+
+```tcl
+set_property -dict { PACKAGE_PIN G15  IOSTANDARD LVCMOS33 } [get_ports { switch_i[0] }];
+set_property -dict { PACKAGE_PIN P15  IOSTANDARD LVCMOS33 } [get_ports { switch_i[1] }];
+set_property -dict { PACKAGE_PIN W13  IOSTANDARD LVCMOS33 } [get_ports { switch_i[2] }];
+set_property -dict { PACKAGE_PIN T16  IOSTANDARD LVCMOS33 } [get_ports { switch_i[3] }];
+set_false_path -from [get_ports {switch_i*}] -to *
+set_input_delay -clock sys_clk 0.0 [get_ports {switch_i*}];
+```
+- **switch_i[0], switch_i[1], ...**: Піни для 4-х перемикачів (SW) плати визначаються як вхідні сигнали `switch_i[0]`, `switch_i[1]`, тощо.
+- **PACKAGE_PIN**: Кожен перемикач прив'язаний до відповідного піна на платі.
+- **set_false_path**: Вказується, що шлях сигналів від перемикачів не враховуватиметься при аналізі часу, оскільки перемикачі зазвичай змінюються рідко і не є критичними для затримки.
+- **set_input_delay**: Визначає затримку в 0 нс для цих вхідних сигналів відносно тактового сигналу `sys_clk`.
+
+---
+
+### 3. **Кнопки (Buttons)**
+
+```tcl
+set_property -dict { PACKAGE_PIN K18  IOSTANDARD LVCMOS33 } [get_ports { btn_i[0] }];
+set_property -dict { PACKAGE_PIN P16  IOSTANDARD LVCMOS33 } [get_ports { btn_i[1] }];
+set_property -dict { PACKAGE_PIN K19  IOSTANDARD LVCMOS33 } [get_ports { btn_i[2] }];
+set_property -dict { PACKAGE_PIN Y16  IOSTANDARD LVCMOS33 } [get_ports { btn_i[3] }];
+set_false_path -from [get_ports {btn_i*}] -to *
+set_input_delay -clock sys_clk 0.0 [get_ports {btn_i*}];
+```
+- **btn_i[0], btn_i[1], ...**: Вхідні сигнали від 4-х кнопок (BTN) плати.
+- **PACKAGE_PIN**: Кожен сигнал кнопки прив'язаний до певного піна на платі.
+- **set_false_path**: Аналогічно перемикачам, шляхи сигналів кнопок не враховуються при аналізі часу.
+- **set_input_delay**: Затримка в 0 нс для вхідних сигналів кнопок відносно тактового сигналу.
+
+---
+
+### 4. **Світлодіоди (LEDs)**
+
+```tcl
+set_property -dict { PACKAGE_PIN M14  IOSTANDARD LVCMOS33 } [get_ports { led_o[0] }];
+set_property -dict { PACKAGE_PIN M15  IOSTANDARD LVCMOS33 } [get_ports { led_o[1] }];
+set_property -dict { PACKAGE_PIN G14  IOSTANDARD LVCMOS33 } [get_ports { led_o[2] }];
+set_property -dict { PACKAGE_PIN D18  IOSTANDARD LVCMOS33 } [get_ports { led_o[3] }];
+set_false_path -from * -to [get_ports {led_o*}];
+set_output_delay -clock sys_clk 0.0 [get_ports {led_o*}];
+```
+- **led_o[0], led_o[1], ...**: Вихідні сигнали для 4-х світлодіодів (LED) плати.
+- **PACKAGE_PIN**: Прив'язка кожного світлодіода до певного піна на платі.
+- **set_false_path**: Вказує, що шляхи сигналів до світлодіодів не є критичними і не повинні враховуватися при аналізі часу.
+- **set_output_delay**: Встановлює затримку в 0 нс для вихідних сигналів світлодіодів відносно тактового сигналу `sys_clk`.
+
+---
+
+### Загальні висновки:
+Цей файл визначає:
+- Фізичну прив'язку сигналів (тактовий сигнал, перемикачі, кнопки, світлодіоди) до пінів на платі.
+- Стандарти напруги логіки (LVCMOS33) для сигналів.
+- Встановлення шляхів, які можна ігнорувати при аналізі затримок (false path), а також вхідні і вихідні затримки для сигналів. 
+
+Це допомагає FPGA коректно працювати з сигналами та забезпечує оптимальне використання ресурсів плати для даного проекту.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
