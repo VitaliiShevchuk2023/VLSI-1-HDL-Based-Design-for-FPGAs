@@ -151,4 +151,13 @@ sh> make gui
 
 
 
+![Опис зображення](Images/Lab4/Lab4_Image1.png)
+
+![Опис зображення](Images/Lab4/Lab4_Image2.png)
+
+![Опис зображення](Images/Lab4/Lab4_Image3.png)
+
+![Опис зображення](Images/Lab4/Lab4_Image4.png)
+
+![Опис зображення](Images/Lab4/Lab4_Image5.png)
 
