@@ -146,8 +146,40 @@ sh > make
    - Проаналізуйте код і створіть схему, що відображає їхню об'єднану функціональність (тільки основні сигнали).
    - Опишіть функціональність, яку реалізують ці модулі. Щоб перевірити правильність опису, далі виконайте програмування FPGA.
  
+```
+graph LR
+    subgraph Входи
+        clk_i[Clock]
+        rst_ni[Reset]
+        switch_i[switch_i[2:0]]
+        RGB_IN[RGB Input<br/>r_i[7:0]<br/>g_i[7:0]<br/>b_i[7:0]]
+        SYNC_IN[Sync Input<br/>hsync_i<br/>vsync_i<br/>vde_i<br/>valid_i]
+        ready_i[ready_i]
+    end
 
+    subgraph Grayscaler
+        GS[rgb_grayscaler_primitive]
+    end
 
+    subgraph Multiplexer
+        MUX[Output MUX<br/>switch_i[0]]
+    end
+
+    subgraph Виходи
+        RGB_OUT[RGB Output<br/>r_o[7:0]<br/>g_o[7:0]<br/>b_o[7:0]]
+        SYNC_OUT[Sync Output<br/>hsync_o<br/>vsync_o<br/>vde_o<br/>valid_o]
+        ready_o[ready_o]
+    end
+
+    RGB_IN --> GS
+    GS --> |gs_prim_r/g/b| MUX
+    RGB_IN --> MUX
+    switch_i --> MUX
+    MUX --> RGB_OUT
+    SYNC_IN --> SYNC_OUT
+    ready_i --> ready_o
+
+```
 
 
 ```mermaid
