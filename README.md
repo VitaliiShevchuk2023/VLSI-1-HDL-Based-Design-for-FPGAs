@@ -22,6 +22,7 @@
 
 [2. Introduction to FPGA](Lab1_Introduction to FPGAs_ukr.md)
 
+
 ## Основна частина
 3. HDL Coding: Combinational Circuits
 4. HDL Coding: Sequential Circuits
