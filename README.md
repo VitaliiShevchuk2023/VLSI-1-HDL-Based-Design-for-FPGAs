@@ -18,8 +18,8 @@
 
 
 ## Вступ
-1. Introduction to the Linux Shell
-2. Introduction to FPGA
+[1. Introduction to the Linux Shell]() 
+[2. Introduction to FPGA]()
 
 ## Основна частина
 3. HDL Coding: Combinational Circuits
