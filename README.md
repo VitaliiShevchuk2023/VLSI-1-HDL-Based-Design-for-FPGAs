@@ -6,10 +6,10 @@
 4 System Verilog: Sequential
 5 Verification
 6 System Verilog: Testbenches 
-7 Algorithms to Architectures 1
-8 Algorithms to Architectures 2
+7 Algorithms to Architectures 
+8 Algorithms to Architectures
 9 Project Idea Presentations
-10 Algorithms to Architectures 3
+10 Algorithms to Architectures
 11 IP-based design on FPGAs
 12 High Level Synthesis for FPGAs
 13 Computer Arithmetic Basics
