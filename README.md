@@ -25,9 +25,10 @@
 
 ## Основна частина
 3. [HDL Coding: Combinational Circuits](Lab2_HDL_Coding:Combinational_Circuits.md)
-4. HDL Coding: Sequential Circuits
-5. Testbenches and Verification
-6. Best Practices of RTL Design in SystemVerilog
+   
+5. HDL Coding: Sequential Circuits
+6. Testbenches and Verification
+7. Best Practices of RTL Design in SystemVerilog
 
 ## Advanced
 7. IP Integrator
