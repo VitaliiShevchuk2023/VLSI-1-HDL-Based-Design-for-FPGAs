@@ -1,19 +1,20 @@
 # VLSI-1-HDL-Based-Design-for-FPGAs
 
-1 Introduction
-2 Design Flow and FPGAs
-3 System Verilog: Combinational
-4 System Verilog: Sequential
-5 Verification
-6 System Verilog: Testbenches 
-7 Algorithms to Architectures 
-8 Algorithms to Architectures
-9 Project Idea Presentations
-10 Algorithms to Architectures
-11 IP-based design on FPGAs
-12 High Level Synthesis for FPGAs
-13 Computer Arithmetic Basics
-14 Summary, Outlook
+1. Introduction
+2. Design Flow and FPGAs
+3. System Verilog: Combinational
+4. System Verilog: Sequential
+5. Verification
+6. System Verilog: Testbenches
+7. Algorithms to Architectures
+8. Algorithms to Architectures
+9. Project Idea Presentations
+10. Algorithms to Architectures
+11. IP-based Design on FPGAs
+12. High-Level Synthesis for FPGAs
+13. Computer Arithmetic Basics
+14. Summary, Outlook
+
 
 
 Вступ
