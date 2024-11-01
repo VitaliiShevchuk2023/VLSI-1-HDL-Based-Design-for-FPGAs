@@ -1,5 +1,35 @@
 # VLSI-1-HDL-Based-Design-for-FPGAs
 
+1 Introduction
+2 Design Flow and FPGAs
+3 System Verilog: Combinational
+4 System Verilog: Sequential
+5 Verification
+6 System Verilog: Testbenches 
+7 Algorithms to Architectures 1
+8 Algorithms to Architectures 2
+9 Project Idea Presentations
+10 Algorithms to Architectures 3
+11 IP-based design on FPGAs
+12 High Level Synthesis for FPGAs
+13 Computer Arithmetic Basics
+14 Summary, Outlook
+
+
+Вступ
+1. Introduction to the Linux Shell
+2. Introduction to FPGA
+
+Основна частина
+3. HDL Coding: Combinational Circuits
+4. HDL Coding: Sequential Circuits
+5. Testbenches and Verification
+6. Best Practices of RTL Design in  SystemVerilog
+
+Advanced
+7. IP Integrator
+8. HLS exercise
+9. FPGA optimizations
 
 
 ### Література:
