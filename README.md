@@ -19,7 +19,6 @@
 
 ## Вступ
 [1. Introduction to the Linux Shell](Lab0_Introduction_to_the_Linux_ukr.md) 
-
 [2. Introduction to FPGA](Lab1_Introduction to FPGAs_ukr.md)
 
 
