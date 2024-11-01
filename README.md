@@ -17,20 +17,20 @@
 
 
 
-Вступ
+## Вступ
 1. Introduction to the Linux Shell
 2. Introduction to FPGA
 
-Основна частина
+## Основна частина
 3. HDL Coding: Combinational Circuits
 4. HDL Coding: Sequential Circuits
 5. Testbenches and Verification
-6. Best Practices of RTL Design in  SystemVerilog
+6. Best Practices of RTL Design in SystemVerilog
 
-Advanced
+## Advanced
 7. IP Integrator
-8. HLS exercise
-9. FPGA optimizations
+8. HLS Exercise
+9. FPGA Optimizations
 
 
 ### Література:
