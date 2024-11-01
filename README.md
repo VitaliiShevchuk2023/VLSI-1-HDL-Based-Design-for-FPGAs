@@ -34,7 +34,7 @@
 
 При написанні коду на мові опису апаратури необхідно користуватись правилами написання коду. 
 В даному курсі в якості базових використані правила написання коду, 
-що описані у lowRISC Verilog Coding Style Guide - https://github.com/lowRISC/styleguides/blob/master/VerilogCodingStyle.md
+що описані у lowRISC Verilog Coding Style Guide - https://github.com/lowRISC/style-guides/blob/master/VerilogCodingStyle.md
 
 
 
