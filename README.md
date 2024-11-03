@@ -53,3 +53,7 @@
 7) Spear, C., Tumbush, G., 2012. SystemVerilog for Verification: A Guide to Learning the Testbench Language Features, 3rd ed. Springer US, Boston, MA. https://doi.org/10.1007/978-1-4614-0715-7
 8) Sutherland, N.S., Davidmann, S., Flake, P., Sutherland, S., Moorby, P., 2006. SystemVerilog for design: a guide to using SystemVerilog for hardware design and modeling, 2nd ed. ed. Springer, New York, NY.
 9) Cummings, C.E., 2003. Synthesizable Finite State Machine Design Techniques Using the New SystemVerilog 3.0 Enhancements.
+
+
+Install Digilent's Board Files, https://digilent.com/reference/programmable-logic/guides/install-board-files?srsltid=AfmBOorNwe13P3BHlwokdRMaoHRCSCNcRTza8lVSMRWlmLjCc3AR2E4f
+
